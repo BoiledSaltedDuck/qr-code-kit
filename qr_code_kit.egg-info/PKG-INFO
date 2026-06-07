@@ -1,0 +1,70 @@
+Metadata-Version: 2.4
+Name: qr-code-kit
+Version: 1.0.0
+Summary: 二维码生成与解析工具 - 生成二维码、批量生成、解码识别
+Author-email: BoiledSaltedDuck <tools@office-tools.pro>
+License: MIT
+Keywords: qr,qrcode,二维码,encode,decode,barcode
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: qrcode[pil]>=7.4
+Dynamic: license-file
+
+# qr-code-kit 二维码生成与解析工具
+
+[![PyPI version](https://img.shields.io/pypi/v/qr-code-kit)](https://pypi.org/project/qr-code-kit/)
+[![Downloads](https://img.shields.io/pypi/dm/qr-code-kit)](https://pypi.org/project/qr-code-kit/)
+[![License](https://img.shields.io/pypi/l/qr-code-kit)](https://github.com/BoiledSaltedDuck/qr-code-kit/blob/main/LICENSE)
+
+## 安装
+
+```bash
+pip install qr-code-kit
+```
+
+## 用法
+
+```bash
+# 生成二维码
+qr-code encode "https://example.com" myqr.png
+
+# 解析二维码
+qr-code decode qrcode.png
+
+# 批量生成（从文本文件每行一条数据）
+qr-code batch data.txt ./qrcodes/
+```
+
+## 功能
+
+### 生成二维码 (encode)
+- 支持任意文本/URL数据
+- 自动纠错级别 H（最高）
+- 圆角模块样式
+- 可自定义颜色
+
+### 解析二维码 (decode)
+- 从图片中读取二维码内容
+- 显示二维码类型和位置
+- 需要安装 pyzbar
+
+### 批量生成 (batch)
+- 从文本文件读取多条数据
+- 自动以内容命名文件
+- 批量输出到指定目录
+
+## 支持
+
+如果 qr-code-kit 帮到了您，欢迎打赏支持：
+
+```
+USDT (TRC20): TMPQygMkv42QPeyYnkxMkPwsqs7udbD2Aa
+```
+
+您的支持是开源项目持续发展的动力 ❤️

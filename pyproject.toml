@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qr-code-kit"
+version = "1.0.0"
+description = "二维码生成与解析工具 - 生成二维码、批量生成、解码识别"
+readme = "README.md"
+authors = [
+    {name = "BoiledSaltedDuck", email = "tools@office-tools.pro"}
+]
+license = {text = "MIT"}
+keywords = ["qr", "qrcode", "二维码", "encode", "decode", "barcode"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Utilities",
+]
+requires-python = ">=3.7"
+dependencies = [
+    "qrcode[pil]>=7.4",
+]
+
+[project.scripts]
+qr-code = "qr_code.qrcoder:main"
+
+[tool.setuptools.packages.find]
+include = ["qr_code*"]

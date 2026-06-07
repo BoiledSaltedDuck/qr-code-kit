@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+qr_code/__init__.py
+qr_code/qrcoder.py
+qr_code_kit.egg-info/PKG-INFO
+qr_code_kit.egg-info/SOURCES.txt
+qr_code_kit.egg-info/dependency_links.txt
+qr_code_kit.egg-info/entry_points.txt
+qr_code_kit.egg-info/requires.txt
+qr_code_kit.egg-info/top_level.txt
